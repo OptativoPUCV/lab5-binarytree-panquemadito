@@ -23,3 +23,16 @@ Tue 07 May 2024 02:10:15 AM UTC:
  tests:  11|6
 total_score: 15/70
 7ebf82e
+Tue 07 May 2024 02:16:59 AM UTC: 
+ treemap.c | 36 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:62:20: error: too few arguments to function ‘tree->lower_than’
+   62 |         } else if (tree->lower_than(current->pair->key)) {
+      |                    ^~~~
+treemap.c:84:21: error: expected expression before ‘>’ token
+   84 |     } else if (tree*>lower_than(key, parent->pair->key)) {
+      |                     ^
+Compilation failed
+b3de34b
