@@ -98,3 +98,18 @@ Tue 07 May 2024 02:41:36 AM UTC:
  tests:  25|1
 total_score: 60/70
 74a6b00
+Tue 07 May 2024 02:45:01 AM UTC: 
+ treemap.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:184:30: error: ‘curret’ undeclared (first use in this function); did you mean ‘current’?
+  184 |         if (tree->lower_than(curret->pair->key. key)) {
+      |                              ^~~~~~
+      |                              current
+treemap.c:184:30: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:184:13: error: too few arguments to function ‘tree->lower_than’
+  184 |         if (tree->lower_than(curret->pair->key. key)) {
+      |             ^~~~
+Compilation failed
+53de8b6
